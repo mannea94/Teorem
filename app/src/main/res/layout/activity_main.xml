@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manne.json.Activities.MainActivity"
+    android:background="@drawable/background_iphone">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/left_icon"
+        android:layout_margin="25dp"
+        android:id="@+id/iconLogin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="95dp"
+        android:background="@drawable/teorem_white"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/selector_shape5"
+        android:layout_marginTop="160dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="20dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:backgroundTint="@color/red"
+            android:id="@+id/username"
+            android:layout_marginTop="40dp"
+            android:textSize="15dp"
+            android:singleLine="true"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:backgroundTint="@color/red"
+            android:id="@+id/password"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="15dp"
+            >
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switchBar"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:textColor="@color/lightGray"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotPass"
+            android:text="forgot your password?"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not a member? Register now"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Login"
+            android:background="@drawable/selector_shape1"
+            android:id="@+id/loginButton"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or Sing up via"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Facebook"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_shape2"
+            android:id="@+id/facebookButton"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

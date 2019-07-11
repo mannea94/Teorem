@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Json</string>
+    <string name="phrase">Your custom application to sell products you no longer use</string>
+
+    <string name="email"> Email </string>
+    <string name="valid_email"> valid email </string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="city">City</string>
+    <string name="phone">Phone</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="certify">I certify that I am over 18 years old</string>
+
+    <string name="facebook_app_id">[APP_ID]</string>
+    <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
+
+    <string name="polite">1. Stay polite respectful in all circumstances </string>
+    <string name="respect">2. Respect the conditions that you set with other subscribers (schedules, tariff and organization mailing in particular   </string>
+    <string name="counterfeiting">3. Counterfeiting is prohibited on the platform  </string>
+    <string name="acknowledge"> I acknowledge having read the rules of use of the platform and pledge to respect them  </string>
+
+    <string name="text_fragment2"> - Customizable shop
+                                   - Maximum 25 listings with 5 photos
+                                   - 3 HL per week
+                                   - Advertising only on home
+                                   - Online ads for 30 consecutive days
+    </string>
+
+
+
+</resources>

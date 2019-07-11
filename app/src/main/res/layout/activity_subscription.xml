@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.manne.json.Activities.SubscriptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/left_icon"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/iconLogin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscription"
+            android:textSize="22dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:id="@+id/viewPager"
+        android:layout_marginTop="120dp"
+        >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:layout_below="@+id/viewPager"
+        android:orientation="horizontal"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use your Vaucher"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Vaucher code"
+            android:backgroundTint="@color/red"
+            android:id="@+id/username"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:layout_marginHorizontal="5dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_shape1"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Validate your code"
+            android:paddingHorizontal="10dp"
+            android:id="@+id/validateButton"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

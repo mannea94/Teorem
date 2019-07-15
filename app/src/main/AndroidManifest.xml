@@ -38,8 +38,16 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activities.ShopCreationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.SearchActivity" />
+        <activity
+            android:name=".Activities.MainFragmentsActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Activities.SearchActivity"
+        <activity
+            android:name=".Activities.MessageNotificationActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Activities.ShopActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             ></activity>
     </application>
 

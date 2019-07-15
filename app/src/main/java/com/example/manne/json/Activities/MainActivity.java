@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
     TextView forgotPass;
     @BindView(R.id.iconLogin)
     ImageView iconLogin;
+//    @BindView(R.id.progress_bar)
+//    ProgressBar progressBar;
+
+
     RestApi api;
     MaterialDialog mDialog;
     UserInfo userInfo;
@@ -59,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     api=new RestApi(this);
     user=new User();
     userInfo=new UserInfo();
-
+//    progressBar.setVisibility(View.GONE);
 
         iconLogin.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -86,7 +91,8 @@ public class MainActivity extends AppCompatActivity {
                             userInfo.setFirstname(dataResponse.getInfo().getLastName());
                             userInfo.setEmail(dataResponse.getInfo().getEmail());
                             userInfo.setId(dataResponse.getInfo().getId());
-                            Intent intent = new Intent(MainActivity.this, ValidationActivity.class);
+//                            progressBar.setVisibility(View.VISIBLE);
+                            Intent intent = new Intent(MainActivity.this, MainFragmentsActivity.class);
                             startActivity(intent);
 
                             Log.e("TAG","successful");

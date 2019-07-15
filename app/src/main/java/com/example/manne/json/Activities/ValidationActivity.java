@@ -48,6 +48,7 @@ public class ValidationActivity extends AppCompatActivity {
                else{
                    Toast.makeText(ValidationActivity.this, "Please confirm the rules", Toast.LENGTH_SHORT).show();
                }
+
            }
        });
 

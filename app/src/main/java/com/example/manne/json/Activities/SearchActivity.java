@@ -22,16 +22,16 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class SearchActivity extends AppCompatActivity {
-    @BindView(R.id.viewPager2)
-    ViewPager pager;
-    @BindView(R.id.tabLayout)
-    TabLayout tabLayout;
-    FragmentAdapter adapter;
+//    @BindView(R.id.viewPager2)
+//    ViewPager pager;
+//    @BindView(R.id.tabLayout)
+//    TabLayout tabLayout;
+//    FragmentAdapter adapter;
 
 //    @BindView(R.id.recyclerViewSubscribers)
 //    RecyclerView recyclerView;
 
-    SubscriberAdapter adapter2;
+//    SubscriberAdapter adapter2;
 
 
     @Override
@@ -44,18 +44,18 @@ public class SearchActivity extends AppCompatActivity {
 
 
 
-
-        setUpViewPager(pager);
-        tabLayout.setupWithViewPager(pager);
+//
+//        setUpViewPager(pager);
+//        tabLayout.setupWithViewPager(pager);
 
     }
 
-    public void setUpViewPager(ViewPager viewPager){
-        FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
-        adapter.addFragment(new FragmentArticle(), "Article");
-        adapter.addFragment(new FragmentSubscriber(), "Subscriber");
-        pager.setAdapter(adapter);
-    }
+//    public void setUpViewPager(ViewPager viewPager){
+//        FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
+//        adapter.addFragment(new FragmentArticle(), "Article");
+//        adapter.addFragment(new FragmentSubscriber(), "Subscriber");
+//        pager.setAdapter(adapter);
+//    }
 
 //    public void getList(){
 //        ArrayList<User> users = new ArrayList<>();

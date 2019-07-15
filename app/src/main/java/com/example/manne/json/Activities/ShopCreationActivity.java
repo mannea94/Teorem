@@ -15,9 +15,11 @@ import android.view.View;
 import android.view.Window;
 import android.webkit.PermissionRequest;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.manne.json.R;
+import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -35,6 +37,9 @@ public class ShopCreationActivity extends AppCompatActivity {
 
     @BindView(R.id.imageSmall)
     ImageView imageSmall;
+
+    @BindView(R.id.uploadImage)
+    TextView uploadImage;
 
     final static int PERMISSION_REQUEST=0;
     final static int PERMISSION_REQUEST2=3;
@@ -63,6 +68,7 @@ public class ShopCreationActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_PICK,
                         MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 startActivityForResult(intent, REQUEST_LOAD_IMAGE);
+
             }
         });
 
@@ -115,6 +121,7 @@ public class ShopCreationActivity extends AppCompatActivity {
                     String picturePath = cursor.getString(columnIndex);
                     cursor.close();
                     largeImage.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+                    uploadImage.setVisibility(View.GONE);
                 }
             case REQUEST_LOAD_IMAGE2:
                 if(resultCode == RESULT_OK){

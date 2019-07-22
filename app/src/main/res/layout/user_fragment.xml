@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:text="User"
+        android:text="Shop"
         android:textSize="22dp"
         android:textStyle="bold" />
 
@@ -19,6 +19,232 @@
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
         />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/message_icon3x3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/messageIcon"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="222dp"
+                    android:id="@+id/largeImage"
+                    android:background="@drawable/selector_shape7"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom|right"
+                    android:id="@+id/imageLarge"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    android:src="@drawable/camera2x2" />
+
+
+            </FrameLayout>
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/smallImage"
+                android:layout_below="@+id/frame"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-50dp"
+                android:src="@drawable/selector_shape6"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/camera1x1"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-80dp"
+                android:id="@+id/imageSmall"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/settings3"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/imageSettings"/>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="170dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginRight="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Article"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subscribers"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="105"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutSettings"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="sing out"
+                    android:id="@+id/singOut"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_shape9"
+                    android:id="@+id/buttonSubscriber"
+                    android:layout_marginRight="10dp"
+                    android:text="Subscribe"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_shape8"
+                    android:id="@+id/buttonContact"
+                    android:text="Contact"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Articles"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewShop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                />
+        </LinearLayout>
+    </ScrollView>
 
 
 </RelativeLayout>

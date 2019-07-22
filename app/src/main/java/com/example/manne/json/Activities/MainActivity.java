@@ -1,6 +1,7 @@
 package com.example.manne.json.Activities;
 
 import android.content.Intent;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
@@ -21,6 +22,7 @@ import com.example.manne.json.Models.DataResponse;
 import com.example.manne.json.Models.User;
 import com.example.manne.json.Models.UserInfo;
 import com.example.manne.json.R;
+import com.example.manne.json.SharedPreferences;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -91,10 +93,15 @@ public class MainActivity extends AppCompatActivity {
                             userInfo.setFirstname(dataResponse.getInfo().getLastName());
                             userInfo.setEmail(dataResponse.getInfo().getEmail());
                             userInfo.setId(dataResponse.getInfo().getId());
+                            user.setUsername(dataResponse.getInfo().username);
+
+                            SharedPreferences.setUserID(userInfo.getUsername(), MainActivity.this);
+                            SharedPreferences.addUser(user, MainActivity.this);
+//
 //                            progressBar.setVisibility(View.VISIBLE);
                             Intent intent = new Intent(MainActivity.this, MainFragmentsActivity.class);
                             startActivity(intent);
-
+                            finish();
                             Log.e("TAG","successful");
 
                         }
@@ -203,6 +210,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+
     }
 }
 

@@ -29,5 +29,22 @@
                                    - Online ads for 30 consecutive days
     </string>
 
+    <string-array name="category">
+        <item>Choose category...</item>
+        <item>Men</item>
+        <item>Women</item>
+        <item>Mixed</item>
+    </string-array>
+
+    <string-array name="size">
+        <item>Choose size...</item>
+        <item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+        <item>XXXL</item>
+    </string-array>
 
 </resources>

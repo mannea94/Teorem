@@ -11,6 +11,10 @@ import java.util.ArrayList;
  */
 
 public class MainFragmentAdapter extends FragmentPagerAdapter {
+
+    private boolean locked = false;
+    private int lockedIndex;
+
     public MainFragmentAdapter(FragmentManager fm) {
         super(fm);
     }
@@ -18,6 +22,12 @@ public class MainFragmentAdapter extends FragmentPagerAdapter {
     public void addFragment(Fragment fragment, String title){
         titles.add(title);
         fragments.add(fragment);
+    }
+
+    public void setLocked(boolean locked, int page) {
+        this.locked = locked;
+        lockedIndex = page;
+        notifyDataSetChanged();
     }
 
     public ArrayList<String> titles = new ArrayList<>();

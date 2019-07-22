@@ -62,6 +62,8 @@ public class ShopCreationActivity extends AppCompatActivity {
             requestPermissions(new String[] {Manifest.permission.READ_EXTERNAL_STORAGE}, PERMISSION_REQUEST2);
         }
 
+
+
         imageLarge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,6 +98,7 @@ public class ShopCreationActivity extends AppCompatActivity {
                     fileList();
                 }
 
+
             case PERMISSION_REQUEST2:
                 if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
                     Toast.makeText(this, "Permission granted", Toast.LENGTH_SHORT).show();
@@ -123,6 +126,8 @@ public class ShopCreationActivity extends AppCompatActivity {
                     largeImage.setImageBitmap(BitmapFactory.decodeFile(picturePath));
                     uploadImage.setVisibility(View.GONE);
                 }
+                break;
+
             case REQUEST_LOAD_IMAGE2:
                 if(resultCode == RESULT_OK){
                     Uri selected_image = data.getData();
@@ -134,6 +139,7 @@ public class ShopCreationActivity extends AppCompatActivity {
                     cursor.close();
                     smallImage.setImageBitmap(BitmapFactory.decodeFile(picturePath));
                 }
+
         }
     }
 }

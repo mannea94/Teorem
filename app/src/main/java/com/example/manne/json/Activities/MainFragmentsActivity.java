@@ -42,7 +42,9 @@ public class MainFragmentsActivity extends AppCompatActivity {
         images2 = new String[]{"home_inactive3x", "search_inactive3x", "add_inactive3x", "favorite_inactive3x", "user_inactive3x"};
 //        String [] images  = {"home_active3x", "search_active3x", "add_active3x", "favorite_active3x", "user_active3x"};
 //        String [] images2 = {"home_inactive3x", "search_inactive3x", "add_inactive3x", "favorite_inactive3x", "user_inactive3x"};
+
         setViewPager(viewPager);
+        
         tabLayout.setupWithViewPager(viewPager);
 
         setUpViewTabs();
@@ -91,6 +93,7 @@ public class MainFragmentsActivity extends AppCompatActivity {
 //
                 if(index==0){
                     tabLayout.getTabAt(index).setIcon(R.drawable.home_active3x);
+
                 }
                 if(index==1){
                     tabLayout.getTabAt(index).setIcon(R.drawable.search_active3x);
@@ -147,6 +150,8 @@ public class MainFragmentsActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
 
-
+    }
 }
